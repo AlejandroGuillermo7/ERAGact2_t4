@@ -127,9 +127,9 @@ ERAGact2_t4/
 - http://67.207.87.232:8084/camionetas/1
 
 🔗 **Actividad 1, sigue corriendo sin cambios (puerto 8082):**
-http://67.207.87.232:8082/alumno
-http://67.207.87.232:8082/materias
-http://67.207.87.232:8082/identificacion
+- http://67.207.87.232:8082/alumno 
+- http://67.207.87.232:8082/materias
+- http://67.207.87.232:8082/identificacion
 
 ---
 
