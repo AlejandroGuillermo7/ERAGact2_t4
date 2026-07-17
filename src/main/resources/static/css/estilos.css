@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+}
+
+h1 {
+    color: #422900;
+}
+
+.filtros a {
+    margin-right: 12px;
+    color: #e58e00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #faf6f0;
+}
+
+a.ver {
+    color: #185fa5;
+}
+
+.nuevo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #e58e00;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.dato {
+    margin-bottom: 10px;
+}
+
+.dato span:first-child {
+    font-weight: bold;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #d3d1c7;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e58e00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.check {
+    font-size: 40px;
+    color: #2e7d32;
+    text-align: center;
+}

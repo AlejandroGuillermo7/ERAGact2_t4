@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+    <title>Camionetas</title>
+</head>
+<body>
+    <p th:text="${nombreProyecto}"></p>
+    <h1>Catálogo de Camionetas</h1>
+
+    <div class="filtros">
+        <a href="/camionetas">Todas</a>
+        <a href="/camionetas?categoria=Pickup">Pickup</a>
+        <a href="/camionetas?categoria=SUV">SUV</a>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="camioneta : ${camionetas}">
+                <td th:text="${camioneta.id}"></td>
+                <td th:text="${camioneta.marca}"></td>
+                <td th:text="${camioneta.modelo}"></td>
+                <td th:text="${camioneta.año}"></td>
+                <td th:text="'$' + ${camioneta.precio}"></td>
+                <td th:text="${camioneta.categoria}"></td>
+                <td>
+                    <a class="ver" th:href="@{/camionetas/{id}(id=${camioneta.id})}">Ver detalle</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="nuevo" href="/camionetas/nueva">+ Agregar camioneta</a>
+</body>
+</html>

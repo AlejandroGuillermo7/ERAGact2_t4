@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+    <title>Detalle de camioneta</title>
+</head>
+<body>
+    <p th:text="${nombreProyecto}"></p>
+
+    <div th:if="${camioneta != null}">
+        <h1 th:text="${camioneta.marca} + ' ' + ${camioneta.modelo}"></h1>
+        <div class="dato"><span>ID:</span> <span th:text="${camioneta.id}"></span></div>
+        <div class="dato"><span>Año:</span> <span th:text="${camioneta.año}"></span></div>
+        <div class="dato"><span>Precio:</span> <span th:text="'$' + ${camioneta.precio}"></span></div>
+        <div class="dato"><span>Categoría:</span> <span th:text="${camioneta.categoria}"></span></div>
+    </div>
+
+    <div th:if="${camioneta == null}">
+        <p>No se encontró esa camioneta.</p>
+    </div>
+
+    <br>
+    <a href="/camionetas">&larr; Volver al catálogo</a>
+</body>
+</html>

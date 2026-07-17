@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+    <title>Formulario</title>
+</head>
+<body>
+    <p th:text="${nombreProyecto}"></p>
+    <h1>Agregar Camioneta</h1>
+    <form th:action="@{/camionetas/nueva}" th:object="${camioneta}" method="post">
+        <label>Marca</label>
+        <input type="text" th:field="*{marca}" required>
+
+        <label>Modelo</label>
+        <input type="text" th:field="*{modelo}" required>
+
+        <label>Año</label>
+        <input type="number" th:field="*{año}" required>
+
+        <label>Precio</label>
+        <input type="number" step="0.01" th:field="*{precio}">
+
+        <label>Categoría</label>
+        <select th:field="*{categoria}">
+            <option value="Pickup">Pickup</option>
+            <option value="SUV">SUV</option>
+        </select>
+
+        <button type="submit">Guardar</button>
+    </form>
+    
+</body>
+</html>

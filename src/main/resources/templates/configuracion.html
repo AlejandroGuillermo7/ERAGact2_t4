@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/estilos.css}">
+    <title>Camioneta agregada</title>
+</head>
+<body>
+    <p th:text="${nombreProyecto}"></p>
+    <div class="check">✓</div>
+    <h1>Camioneta Agregada Correctamente</h1>
+    <p th:text="${camioneta.marca} + ' ' + ${camioneta.modelo} + ' (' + ${camioneta.año} + ')'"></p>
+
+    <br>
+    <a href="/camionetas">Ver catálogo completo</a>
+</body>
+</html>
