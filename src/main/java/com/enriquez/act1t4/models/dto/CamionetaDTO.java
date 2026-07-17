@@ -4,11 +4,11 @@ package com.enriquez.act1t4.models.dto;
 public class CamionetaDTO{
     private int id;
     private String marca, modelo, categoria;
-    private int año;
+    private int anio;
     private double precio;
 
-    public CamionetaDTO(int año, String categoria, int id, String marca, String modelo, double precio) {
-        this.año = año;
+    public CamionetaDTO(int anio, String categoria, int id, String marca, String modelo, double precio) {
+        this.anio = anio;
         this.categoria = categoria;
         this.id = id;
         this.marca = marca;
@@ -46,11 +46,11 @@ public class CamionetaDTO{
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-    public int getAño() {
-        return año;
+    public int getAnio() {
+        return anio;
     }
-    public void setAño(int año) {
-        this.año = año;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
     public double getPrecio() {
         return precio;

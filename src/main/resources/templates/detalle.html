@@ -11,7 +11,7 @@
     <div th:if="${camioneta != null}">
         <h1 th:text="${camioneta.marca} + ' ' + ${camioneta.modelo}"></h1>
         <div class="dato"><span>ID:</span> <span th:text="${camioneta.id}"></span></div>
-        <div class="dato"><span>Año:</span> <span th:text="${camioneta.año}"></span></div>
+        <div class="dato"><span>Año:</span> <span th:text="${camioneta.anio}"></span></div>
         <div class="dato"><span>Precio:</span> <span th:text="'$' + ${camioneta.precio}"></span></div>
         <div class="dato"><span>Categoría:</span> <span th:text="${camioneta.categoria}"></span></div>
     </div>
